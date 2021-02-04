@@ -6,7 +6,7 @@ import DataBaseEntry as Entry
 
 class MysqlDao:
     def __init__(self):
-        self.__engine = create_engine("mysql://root:123456@192.168.1.100:3306/Keqing?charset=utf8", echo=True)
+        self.__engine = create_engine("mysql://root:123456@192.168.1.100:3306/Keqing?charset=utf8")
         self.__Session = sessionmaker(bind=self.__engine)
 
     def init_table(self):
