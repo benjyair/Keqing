@@ -1,0 +1,11 @@
+name: keqing
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - apscheduler
+  - sqlalchemy
+  - requests
+  - mysqlclient
+  - pymysql
+prefix: /opt/anaconda3/envs/keqing
