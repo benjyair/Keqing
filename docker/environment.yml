@@ -6,6 +6,6 @@ dependencies:
   - apscheduler
   - sqlalchemy
   - requests
-  - mysqlclient
   - pymysql
+  - mysqlclient
 prefix: /opt/anaconda3/envs/keqing

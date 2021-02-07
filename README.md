@@ -10,11 +10,16 @@ docker pull benjyair/keqing:latest
 
 ```shell
 cd docker
-# 导出当前 conda 环境
+# 1、导出当前 conda 环境
 conda env export --from-history > environment.yml
-# 根据当前环境构建 docker 镜像
-docker build -t benjyair/keqing .  
+
+# 2、open 'environment' and insert 'mysqlclient' 
+#  - mysqlclient
+
+# 3、根据当前环境构建 docker 镜像
+docker build -t benjyair/keqing .
 #docker build --no-cache -t benjyair/keqing .
-# 推送镜像到 docker hub
+
+# 4、推送镜像到 docker hub
 docker push benjyair/keqing
 ```
