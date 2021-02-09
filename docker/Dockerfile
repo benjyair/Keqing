@@ -18,7 +18,7 @@ WORKDIR /home/work/Keqing
 RUN git pull
 RUN echo "Docker Build: Repository initialization completed"
 
-# Run codes
+# Run the code
 WORKDIR /home/work/Keqing/src
 RUN echo "Docker Build: The code to run when container is started"
 ENTRYPOINT ["conda", "run", "--no-capture-output", "-n", "keqing", "python", "Main.py"]
