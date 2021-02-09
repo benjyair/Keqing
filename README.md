@@ -3,12 +3,8 @@
 ### 初始化环境
 
 ```shell
-# 1、获取最近的 docker 镜像
+# 获取最近的 docker 镜像
 docker pull benjyair/keqing:latest
-# 2、激活镜像、进入命令行
-# 3、检查当前 环境是否激活，如未激活手动激活
-conda evn info -e
-conda activate keqing
 ```
 
 ### 重新构建镜像
