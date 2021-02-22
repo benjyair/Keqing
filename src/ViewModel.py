@@ -15,10 +15,15 @@ def get_numeric(dic, key, def_val=0):
 class ViewModel:
     fund_url = 'https://api.doctorxiong.club/v1/fund'
     page_size = 10
+    __dao = None
 
-    def __init__(self):
+    def connect(self):
         self.__dao = Dao()
+        self.__dao.connect()
         self.__dao.init_table()
+
+    def dispose(self):
+        self.__dao.dispose()
 
     def sync_rank(self):
         favourites = self.__dao.get_favourite()
