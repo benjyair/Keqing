@@ -25,7 +25,6 @@ def job():
              "005176",
              "161005",
              "163406",
-             "040046",
              "519697"]
     vm.sync_favourite(codes)
     vm.sync_rank()
