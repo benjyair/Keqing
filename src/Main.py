@@ -37,7 +37,6 @@ if __name__ == '__main__':
     scheduler = BlockingScheduler()
     scheduler.add_job(job, 'cron', day_of_week='1-5', hour=9, minute=0, timezone='Asia/Shanghai')
     scheduler.add_job(job, 'cron', day_of_week='1-5', hour=23, minute=30, timezone='Asia/Shanghai')
-    scheduler.add_job(job, 'cron', day_of_week='1-5', hour=14, minute=50, timezone='Asia/Shanghai')
     scheduler.start()
     print(datetime.now().strftime("%Y-%m-%d %H:%M:%S") + ": scheduler start")
 
