@@ -9,7 +9,7 @@ class MysqlDao:
     __session = None
 
     def connect(self):
-        self.__engine = create_engine("mysql://keqing:abc123@192.168.1.100:3306/Keqing?charset=utf8", echo=True)
+        self.__engine = create_engine("mysql://keqing:abc123@192.168.192.1:3306/Keqing?charset=utf8", echo=True)
         self.__session = sessionmaker(bind=self.__engine)
 
     def dispose(self):
